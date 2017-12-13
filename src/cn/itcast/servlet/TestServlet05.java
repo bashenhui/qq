@@ -7,7 +7,7 @@ public class TestServlet05 extends HttpServlet {
       HttpServletResponse response)throws ServletException, IOException {
       PrintWriter out = response.getWriter();
 		ServletContext context = this.getServletContext();
-	         // 通过getAttribute()方法获取属性值
+	    
 			String data = (String) context.getAttribute("data");
 			out.println(data);
 		}
